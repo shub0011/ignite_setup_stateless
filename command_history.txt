@@ -1,0 +1,420 @@
+    1  wget http://identity-auth-service-dev-service.dev.svc:7091
+    2  ls
+    3  git clone https://github.com/shub0011/ignite_setup.git
+    4  sudo apt search kubectl
+    5  sudo apt install kubectl
+    6  sudo apt install kubernetes-cli
+    7  eksctl
+    8  curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/darwin/amd64/kubectl
+    9  curl -o kubectl.sha256 https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/darwin/amd64/kubectl.sha256
+   10  openssl sha1 -sha256 kubectl
+   11  chmod +x ./kubectl
+   12  mkdir -p $HOME/bin && cp ./kubectl $HOME/bin/kubectl && export PATH=$HOME/bin:$PATH
+   13  echo 'export PATH=$PATH:$HOME/bin' >> ~/.bash_profile
+   14  cat .bash_profile 
+   15  . .bash_profile 
+   16  kubectl
+   17  rm -rf kubectl
+   18  curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
+   19  chmod +x ./kubectl
+   20  kubectl
+   21  rm kubectl
+   22  ls
+   23  curl -o kubectl https://amazon-eks.s3.us-west-2.amazonaws.com/1.19.6/2021-01-05/bin/linux/amd64/kubectl
+   24  chmod +x ./kubectl
+   25  kubectl
+   26  curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
+   27  sudo mv /tmp/eksctl /usr/local/bin
+   28  eksctl version
+   29  kubectl get svc
+   30  aws eks get-token
+   31  sudo snap install aws-cli
+   32  sudo snap install aws-cli --classic
+   33  aws eks get-token
+   34  aws eks help
+   35  aws eks list-clusters
+   36  aws eks list-clusters help
+   37  aws eks list-clusters
+   38  aws eks list-clusters --region us-east-1
+   39  aws configure
+   40  aws eks list-clusters --region us-east-1
+   41  aws eks list-clusters --region us-east-2
+   42  aws eks list-clusters --region ap-south-1
+   43  kubectl get svc
+   44  cat ~/.kube/config
+   45  update-kubeconfig
+   46  aws eks --region ap-south-1 update-kubeconfig --name site-attendance-eks
+   47  aws eks help
+   48  eksctl create cluster --name my-cluster --region us-west-2 --fargate
+   49  eksctl delete cluster --region=us-west-2 --name=my-cluster
+   50  eksctl create cluster --name my-cluster --region ap-south-1 --fargate
+   51  aws cloudformation delete-stack     --stack-name my-stack
+   52  aws cloudformation delete-stack     --stack-name eksctl-ignitecluster3-cluster
+   53  aws cloudformation delete-stack     --stack-name eksctl-ignitecluster3-cluster
+   54  aws cloudformation delete-stack     --stack-name eksctl-ignitecluster2-cluster
+   55  aws cloudformation delete-stack     --stack-name eksctl-ignitecluster1-cluster
+   56  aws cloudformation delete-stack     --stack-name eksctl-ignitecluster-cluster
+   57  aws cloudformation delete-stack     --stack-name eksctl-ignitecluster2-cluster
+   58  aws cloudformation delete-stack     --stack-name eksctl-ignitecluster2-clusters
+   59  aws cloudformation delete-stack     --stack-name eksctl-ignitecluster4-cluster
+   60  aws cloudformation delete-stack     --stack-name eksctl-ignitecluster-cluster
+   61  eksctl create cluster --name ignitecluster --nodes 2 --nodes-min 1 --nodes-max 4
+   62  aws configure
+   63  aws configure
+   64  eksctl create cluster --name ignitecluster --nodes 2 --nodes-min 1 --nodes-max 4
+   65  eksctl create cluster --name ignitecluster --nodes 2 --nodes-min 1 --nodes-max 4
+   66  eksctl create cluster --name ignitecluster --nodes 2 --nodes-min 1 --nodes-max 4
+   67  eksctl create cluster --name ignitecluster --nodes 2 --nodes-min 1 --nodes-max 4
+   68  eksctl create cluster --name ignitecluster --nodes 2 --nodes-min 1 --nodes-max 4
+   69  eksctl create cluster --name ignitecluster2 --nodes 2 --nodes-min 1 --nodes-max 4
+   70  eksctl create cluster --name ignitecluster2 --nodes 2 --nodes-min 1 --nodes-max 4
+   71  aws eks list-clusters --region ap-south-1
+   72  eksctl create cluster --name ignitecluster3 --nodes 2 --nodes-min 1 --nodes-max 4
+   73  eksctl create cluster --name ignitecluster3 --nodes 2 --nodes-min 1 --nodes-max 4
+   74  eksctl create cluster --name ignitecluster --nodes 2 --nodes-min 1 --nodes-max 4
+   75  eksctl create cluster --name ignitecluster4 --nodes 2 --nodes-min 1 --nodes-max 4
+   76  eksctl create cluster --name ignitecluster --nodes 2 --nodes-min 1 --nodes-max 4
+   77  eksctl create cluster --name ignitecluster2 --nodes 2 --nodes-min 1 --nodes-max 4
+   78  kubeclt describe
+   79  kubectl describe
+   80  kubectl cluster-info
+   81  kubectl list-clusters 
+   82  aws eks list-clusters --region ap-south-1
+   83  ls .kube
+   84  eksctl get cluster -n ignitecluster2
+   85  tar -czf .kube.tar.gz .kube
+   86  vi ~/.ssh/authorized_keys 
+   87  vi ~/.ssh/authorized_keys 
+   88  vi ~/.ssh/authorized_keys 
+   89  sudo su -
+   90  vim ~/.ssh/authorized_keys 
+   91  ls
+   92  ls
+   93  cd ignite_setup/
+   94  ls
+   95  cat node-configuration.xml 
+   96  cd ..
+   97  kubectl get pods
+   98  eksctl get pods
+   99  eksctl get cluster
+  100  eksctl get iamidentitymapping
+  101  eksctl help
+  102  eksctl get cluster  ignitecluster2
+  103  ls
+  104  cd ignite_setup/
+  105  ls
+  106  cat cluster-role.yaml 
+  107  cat service.yaml
+  108  ls
+  109  cat deployment.yaml
+  110  git clone https://github.com/shub0011/ignite_setup.git
+  111  ls
+  112  cd ignite_setup/
+  113  ls
+  114  eksctl get cluster -n ignitecluster
+  115  eksctl get cluste
+  116  eksctl get cluster
+  117  eksctl get cluster -n ignitecluster2
+  118  kubectl create namespace ignite
+  119  aws configure
+  120  kubectl create namespace ignite
+  121  kubectl version
+  122  kubectl get svc
+  123  ls
+  124  kubectl create -f service.yaml
+  125  sudo apt-get install python3-pip
+  126  pip install --user --upgrade awscli
+  127  sudo apt-get install python3-dev
+  128  pip3 install --user --upgrade awscli
+  129  pip3 install --user --upgrade awscli
+  130  eksctl get cluster -n ignitecluster2
+  131  kubectl get svc
+  132  kubectl version
+  133  kubectl --version
+  134  kubectl version
+  135  curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+  136  curl -LO "https://dl.k8s.io/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl.sha256"
+  137  echo "$(<kubectl.sha256) kubectl" | sha256sum --check
+  138  sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+  139  kubectl get svc
+  140  curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+  141  sudo touch /etc/apt/sources.list.d/kubernetes.list 
+  142   echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+  143  sudo apt-get update
+  144  sudo apt-get install -y kubectl
+  145  kubectl get svc
+  146  kubectl api-versions
+  147  history
+  148  kubectl version --client
+  149  kubectl version --server
+  150  kubectl version --client
+  151  kubectl get svc
+  152  sudo -H pip install awscli --upgrade --ignore-installed six
+  153  sudo -H pip3 install awscli --upgrade --ignore-installed six
+  154  kubectl get svc
+  155  kubectl get svc
+  156  kubectl create namespace ignite
+  157  ls
+  158  cd ignite_setup/
+  159  ls
+  160  kubectl create -f service.yaml
+  161  kubectl create sa ignite -n ignite
+  162  kubectl create -f cluster-role.yaml
+  163  kubectl create configmap ignite-config -n ignite --from-file=node-configuration.xml
+  164  ls
+  165   kubectl create -f statefulset.yaml
+  166  git pull
+  167   kubectl create -f statefulset.yaml
+  168  kubectl get pods -n ignite
+  169  kubectl get pods -n ignite
+  170  kubectl get pods -n ignite
+  171  kubectl get pods -n ignite
+  172  kubectl logs ignite-cluster-0 -n ignite
+  173  kubectl get pod
+  174  kubectl help
+  175  kubectl get help
+  176  kubectl get
+  177  kubectl get -h
+  178  kubectl get deployment
+  179  cd ignite_setup/
+  180  git pull
+  181  git pull
+  182  /etc/init.d/kubelet restart
+  183  kubectl get deployment
+  184  kubectl get deployment -n ignite
+  185  kubectl get pods
+  186  kubectl get pod
+  187  cd ..
+  188  kubectl get pod
+  189  kubectl get pod -n ignite
+  190  kubectl get deployment -n ignite
+  191   kubectl logs ignite-cluster-0 -n ignite
+  192  kubectl get deployments
+  193  kubectl get deployments -n ignite
+  194  kubectl get namespaces 
+  195  kubectl get deployments -n ignite
+  196  kubectl get pods -n ignite
+  197  kubectl create -f service.yaml
+  198  ls
+  199  cd ignite_setup/
+  200  kubectl create -f service.yaml
+  201  kubectl apply -f service.yaml
+  202  kubectl create configmap ignite-config -n ignite --from-file=node-configuration.xml
+  203  kubectl apply -f deployment.yaml
+  204  kubectl get pods -n ignite
+  205  kubectl apply -f deployment.yaml
+  206  ls
+  207  cd ignite_setup/
+  208  kubectl apply -f deployment.yaml
+  209  git pull
+  210  kubectl log ignite-cluster-755f6665c8-g48c5  -n ignite
+  211  kubectl logs ignite-cluster-755f6665c8-g48c5  -n ignite
+  212  kubectl get nodes
+  213  kubectl describe node ip-192-168-24-163.ap-south-1.compute.internal
+  214  kubectl delete node ip-192-168-24-163.ap-south-1.compute.internal
+  215  kubectl delete node ip-192-168-79-186.ap-south-1.compute.internal
+  216  eksctl get cluster -n ignitecluster
+  217  eksctl get cluster -n ignitecluster2
+  218  kubectl config delete-cluster ignitecluster2
+  219  kubectl get deployments -n ignite
+  220  kubectl get replicatset -n ignite
+  221  kubectl get replicaset -n ignite
+  222  kubectl get pod -n ignite
+  223  kubectl edit
+  224  kubectl edit deployment -n ignite
+  225  kubectl logs ignite-cluster-0 
+  226  kubectl logs ignite-cluster-0 -n ignite
+  227  cd ignite_setup/
+  228  kubectl get deployments -n ignite
+  229  kubectl delete deploymnet ignite-cluster -n ignite
+  230  kubectl delete deployment ignite-cluster -n ignite
+  231  kubectl get deployments -n ignite
+  232  cd ..
+  233  kubectl get deployments -n ignite
+  234  kubectl get pods -n ignite
+  235  kubectl get pods 
+  236  cd ignite_setup/
+  237  kubectl get deployments -n ignite
+  238  ls
+  239  ls -a
+  240  cd ..
+  241  ls -a
+  242  cat .kube
+  243  cd .kube
+  244  ls
+  245  cat config
+  246  ls -a
+  247  cd 
+  248  kubectl get svc
+  249  kubectl get namespace
+  250  kubectl get deployments -n ignite
+  251  kubectl get deployments -n default
+  252  kubectl get deployments -n kube-node-lease
+  253  kubectl get deployments -n kube-public
+  254  kubectl get deployments -n kube-system
+  255  kubectl get rs -n ignite
+  256  kubectl get pods -n ignite
+  257  kubectl get all -n ignite
+  258  ls
+  259  mkdir repo
+  260  cd repo/
+  261  ls
+  262  git
+  263  mvn --version
+  264  sudo apt install maven
+  265  javac
+  266  kubectl get pods
+  267  kubectl get pods -n ignite
+  268  kubectl get svc --all-namespaces
+  269  kubectl get pods -n ignite-service
+  270  kubectl delete svc ignite_service
+  271  kubectl delete svc ignite-service
+  272  kubectl delete svc ignite-service
+  273  kubectl delete svc ignite-service -n ignite
+  274  kubectl get svc --all-namespaces
+  275  aws eks list-nodegroups -ignite
+  276  aws eks list-nodegroups
+  277  aws eks list-nodegroups --ignite-cluster
+  278  aws eks list-clusters
+  279  aws eks list-nodegroups --ignitecluster2
+  280  aws eks list-nodegroups --ignitecluster2 -n ignite
+  281  aws eks list-nodegroups --ignitecluster2 -n ignite
+  282  aws eks list-nodegroups --ignitecluster2
+  283  aws eks list-nodegroups --cluster-name ignitecluster2
+  284  aws eks delete-cluster --name ignitecluster2
+  285  kubectl get pods -n ignite
+  286  history | grep 'pod'
+  287  kubectl get pods -n ignite
+  288  kubectl get pods
+  289  brew install kubectl
+  290  sudo apt install kubectl
+  291  sudo apt-get update &&     sudo apt-get install docker.io -y
+  292  curl -Lo minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 && chmod +x minikube && sudo mv minikube /usr/local/bin/
+  293  minikube version
+  294  sudo -i
+  295  curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
+  296  sudo dpkg -i minikube_latest_amd64.deb
+  297  minikube start
+  298  minikube start --driver=docker
+  299  sudo usermod -aG docker $USER && newgrp docker
+  300  minikube start --driver=docker
+  301  minikube start --extra-config=kubeadm.ignore-preflight-errors=NumCPU --force --cpus 1
+  302  kubectl get po -A
+  303  minikube kubectl -- get po -A
+  304  minikube dashboard
+  305  minikube config set driver docker
+  306  minikube delete
+  307  sudo minikube delete
+  308  minikube start
+  309  minikube start --extra-config=kubeadm.ignore-preflight-errors=NumCPU --force --cpus 1
+  310  minikube start
+  311  minikube start --extra-config=kubeadm.ignore-preflight-errors=NumCPU --force --cpus 1
+  312  kubectl cluster-info
+  313  exit
+  314  ls
+  315  exit
+  316  minikube dashboard
+  317  exit
+  318  ls
+  319   cat /proc/meminfo
+  320   cat /proc/cpuinfo
+  321  eksctl create cluster --name ignitecluster --nodes 2 --nodes-min 1 --nodes-max 4
+  322  eksctl get cluster -n ignitecluster
+  323  kubectl get svc
+  324  kubectl create namespace ignite
+  325  ls
+  326  ls
+  327  git clone https://github.com/shub0011/ignite_setup_stateless.git
+  328  ls
+  329  cd ignite_setup_stateless/
+  330  ls
+  331  kubectl get svc
+  332  kubectl create namespace ignite
+  333  kubectl create -f service.yaml
+  334  kubectl create sa ignite -n ignite
+  335  kubectl create -f cluster-role.yaml
+  336  kubectl create configmap ignite-config -n ignite --from-file=node-configuration.xml
+  337  kubectl create -f statefulset.yaml
+  338  kubectl get pods -n ignite
+  339  kubectl get pods -n ignite
+  340  kubectl get pods -n ignite
+  341  kubectl get pods -n ignite
+  342  kubectl get pods -n ignite
+  343  kubectl logs ignite-cluster-0 -n ignite
+  344  kubectl exec -it ignite-cluster-0 -n ignite -- /bin/bash
+  345  kubectl scale sts ignite-cluster --replicas=3 -n ignite
+  346  kubectl exec -it ignite-cluster-0 -n ignite -- /bin/bash
+  347  kubectl describe svc ignite-service -n ignite
+  348  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite?cmd=version
+  349  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=put\&key\=key\&val\=value\&cacheName\=test
+  350  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=put\&key\=key\&val\=value\&cacheName\=test
+  351  export IGNITE_EP= http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080
+  352  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=getorcreate\&cacheName\=test
+  353  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=put\&key\=key\&val\=value\&cacheName\=test
+  354  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=get\&key\=key\&cacheName\=test
+  355  ls
+  356  cd repo
+  357  ls
+  358  javac
+  359  sudo apt install openjdk-8-jdk-headless
+  360  telnet b-2.demo-cluster-1.xccpph.c2.kafka.ap-south-1.amazonaws.com 9092
+  361  telnet b-1.demo-cluster-1.xccpph.c2.kafka.ap-south-1.amazonaws.com 9092
+  362  export $IGNITE_EP = 'http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080'
+  363  export $IGNITE_EP = "http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080"
+  364  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=getorcreate\&cacheName\=test2&backups\=1
+  365  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=getorcreate\&cacheName\=test3\&backups\=1
+  366  history | grep 'bash'
+  367  kubectl exec -it ignite-cluster-0 -n ignite -- /bin/bash
+  368  history | grep 'top'
+  369  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=top
+  370  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=cache
+  371  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=cache
+  372  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=test3
+  373  kubectl exec -it ignite-cluster-0 -n ignite -- /bin/bash
+  374  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=put\&key\=key\&val\=shubhendu\&cacheName\=test3
+  375  curl http://acac441c23e0f47aebbcdc165ae3aedc-237846483.ap-south-1.elb.amazonaws.com:8080/ignite\?cmd\=get\&key\=key\&cacheName\=test3
+  376  cd ignite_setup/
+  377  ls -l
+  378  cat statefulset.yaml 
+  379  kubectl get all -n ignite
+  380  kubectl describe svc ignite-service -n ignite
+  381  kubectl get pvc 
+  382  kubectl get pvc -n ignite
+  383  kubectl get pv -n ignite
+  384  kubectl get storageclass -n ignite
+  385  kubectl get storageclass -n ignite -o yaml
+  386  kubectl get pod -n ignite 
+  387  kubectl exec -t ignite-cluster-0 -- bin/bash
+  388  kubectl exec -t ignite-cluster-0 -- bin/bash -n ignite
+  389  kubectl exec -n ignite -it ignite-cluster-0 -- bin/bash
+  390  kubectl exec -n ignite -it ignite-cluster-0 -- /bin/bash
+  391  vi .ssh/authorized_keys 
+  392  vi .ssh/authorized_keys 
+  393  cat /proc/cpuinfo 
+  394  cat /proc/meminfo 
+  395  kubectl get pods -n ignite
+  396  kubectl delete pod ignite-cluster-2 -n ignite --grace-period 0
+  397  kubectl get pods -n ignite
+  398  exit
+  399  cat /proc/
+  400  cat /proc/meminfo 
+  401  kubectl get storageclass
+  402  kubectl get storageclass -n ignite
+  403  kubectl getnodes
+  404  kubectl get nodes
+  405  kubectl get nodes -n ignite
+  406  history
+  407  history | grep 'eksctl'
+  408  eksctl get cluster -n ignitecluster 
+  409  eksctl get cluste
+  410  eksctl get cluster
+  411  aws configure
+  412  kubectl get storageclass -n ignite
+  413  kubectl get all -n ignite
+  414  kubectl get pv
+  415  history > command_history.txt
+  416  git status
+  417  ls
+  418  cd ignite_setup_stateless/
+  419  git status
+  420  history > command_history.txt
