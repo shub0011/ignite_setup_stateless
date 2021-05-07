@@ -51,7 +51,7 @@ Create the StatefulSet by running the following command:
 Check if the pods were deployed correctly:
 ```sh
 
-$ kubectl get pods -n ignite
+kubectl get pods -n ignite
 ```
 Check if the ignite were deployed correctly (eg):
 ```sh
