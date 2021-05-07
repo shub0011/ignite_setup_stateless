@@ -2,9 +2,11 @@
 
 Follow these steps
 
-install eksctl 
 
-install kubectl
+-  - install eksctl 
+-  - install kubectl 
+
+
 
 ```sh
 eksctl create cluster --name ignitecluster --nodes 2 --nodes-min 1 --nodes-max 4
