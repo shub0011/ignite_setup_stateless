@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: task-pv-pod
+spec:
+  volumes:
+    - name: pvc-restore
+      persistentVolumeClaim:
+        claimName: pvc-restore
+  containers:
+    - name: task-pv-container
+      image: centos
+      command: ["/bin/sh"]
+      args: ["-c", "sleep 100000"]
+      volumeMounts:
+        - mountPath: "/data"
+          name: pvc-restore
