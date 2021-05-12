@@ -61,23 +61,23 @@ spec:
       name: work-vol
     spec:
 	      accessModes: [ "ReadWriteOnce" ]
-#      storageClassName: "ignite-persistence-storage-class"
+     storageClassName: "ebs-sc"
       resources:
         requests:
-          # storage: "1Gi" # make sure to provide enought space for your application data
+          storage: "2Gi" # make sure to provide enought space for your application data
   - metadata:
       name: wal-vol
     spec:
       accessModes: [ "ReadWriteOnce" ]
-#      storageClassName: "ignite-wal-storage-class"
+     storageClassName: "ebs-sc"
       resources:
         requests:
-          # storage: "1Gi"
+          storage: "2Gi"
   - metadata:
       name: walarchive-vol
     spec:
       accessModes: [ "ReadWriteOnce" ]
-#      storageClassName: "ignite-wal-storage-class"
+     storageClassName: "ebs-sc"
       resources:
         requests:
-          # storage: "1Gi"
+          storage: "2Gi"
