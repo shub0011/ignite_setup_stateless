@@ -56,8 +56,8 @@ spec:
   - metadata:
       name: work-vol
     spec:
-      accessModes: [ "ReadWriteOnce" ]
-     storageClassName: "ebs-sc"
+    accessModes: [ "ReadWriteOnce" ]
+     storageClassName: ebs-sc
       resources:
         requests:
           # storage: "1Gi" # make sure to provide enought space for your application data
@@ -65,7 +65,7 @@ spec:
       name: wal-vol
     spec:
       accessModes: [ "ReadWriteOnce" ]
-     storageClassName: "ebs-sc"
+     storageClassName: ebs-sc
       resources:
         requests:
           # storage: "1Gi"
@@ -73,7 +73,7 @@ spec:
       name: walarchive-vol
     spec:
       accessModes: [ "ReadWriteOnce" ]
-     storageClassName: "ebs-sc"
+     storageClassName: ebs-sc
       resources:
         requests:
           # storage: "1Gi"
