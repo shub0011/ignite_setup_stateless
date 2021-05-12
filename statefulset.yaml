@@ -19,7 +19,11 @@ spec:
     spec:
       serviceAccountName: ignite
       terminationGracePeriodSeconds: 60000
-      containers:
+      volumes:
+      - name: pvc-restore
+        persistentVolumeClaim:
+          claimName: pvc-restore
+        containers:
         # Custom pod name.
       - name: ignite-node
         image: apacheignite/ignite:2.10.0
@@ -57,7 +61,7 @@ spec:
       name: work-vol
     spec:
     accessModes: [ "ReadWriteOnce" ]
-     storageClassName: ebs-sc
+    #  storageClassName: ebs-sc
       resources:
         requests:
           # storage: "1Gi" # make sure to provide enought space for your application data
@@ -65,7 +69,7 @@ spec:
       name: wal-vol
     spec:
       accessModes: [ "ReadWriteOnce" ]
-     storageClassName: ebs-sc
+    #  storageClassName: ebs-sc
       resources:
         requests:
           # storage: "1Gi"
@@ -73,7 +77,7 @@ spec:
       name: walarchive-vol
     spec:
       accessModes: [ "ReadWriteOnce" ]
-     storageClassName: ebs-sc
+    #  storageClassName: ebs-sc
       resources:
         requests:
           # storage: "1Gi"
