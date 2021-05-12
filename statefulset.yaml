@@ -60,7 +60,7 @@ spec:
   - metadata:
       name: work-vol
     spec:
-	      accessModes: [ "ReadWriteOnce" ]
+          accessModes: [ "ReadWriteOnce" ]
     #  storageClassName: "ebs-sc"
       resources:
         requests:
